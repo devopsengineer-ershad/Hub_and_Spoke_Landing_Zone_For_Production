@@ -63,10 +63,12 @@ Application Gateway
 📊 Monitoring
 
 Log Analytics Workspace
-
 Centralized Diagnostics
+
 🚀 Deployment
-Run the following Terraform commands to deploy the landing zone
+
+Run the following Terraform commands to deploy the landing zone:
+
 terraform init
 terraform validate
 terraform plan
