@@ -12,17 +12,16 @@ Built following Microsoft Cloud Adoption Framework (CAF) principles for secure a
 ✅ Enterprise Network Segmentation
 ✅ Scalable Platform Foundation
 
-🏗 Architecture Overview
-                     🌐 Internet
-                          │
-                🚪 Application Gateway
-                          │
-                    🔥 Azure Firewall
-                          │
-        ─────────────────────────────────
-        │               │               │
-     🖥 Frontend      ⚙ Backend       🗄 Data
-        Spoke           Spoke          Spoke
+                         🌐 Internet
+                              │
+                    🚪 Application Gateway
+                              │
+                        🔥 Azure Firewall
+                              │
+        ─────────────────────────────────────
+              │              │              │
+           🖥 Frontend     ⚙ Backend       🗄 Data
+              Spoke          Spoke          Spoke
 
 🔹 Hub → Shared Connectivity & Security
 🔹 Spokes → Application Workloads
