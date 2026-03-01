@@ -1,78 +1,66 @@
-🌍 Azure Hub & Spoke Landing Zone
-🚀 Enterprise Azure Infrastructure using Terraform
-<p align="center"> <img src="https://img.shields.io/badge/IaC-Terraform-623CE4?style=for-the-badge&logo=terraform"/> <img src="https://img.shields.io/badge/Cloud-Microsoft%20Azure-0078D4?style=for-the-badge&logo=microsoftazure"/> <img src="https://img.shields.io/badge/Architecture-Hub%20%26%20Spoke-success?style=for-the-badge"/> <img src="https://img.shields.io/badge/Status-Production%20Ready-brightgreen?style=for-the-badge"/> </p>
-✨ About The Project
+# 🌍 Azure Hub & Spoke Landing Zone  
+## 🚀 Enterprise Azure Infrastructure using Terraform
 
-An Enterprise-Grade Azure Landing Zone implementing Hub & Spoke Network Architecture using a fully modular Terraform framework.
+---
 
-Built following Microsoft Cloud Adoption Framework (CAF) principles for secure and scalable cloud environments.
+## ✨ About The Project
 
-✅ Centralized Security
-✅ Private Workload Connectivity
-✅ Enterprise Network Segmentation
-✅ Scalable Platform Foundation
+An **Enterprise-Grade Azure Landing Zone** implementing **Hub & Spoke Network Architecture** using a fully modular **Terraform framework**.
 
-                         🌐 Internet
-                              │
-                    🚪 Application Gateway
-                              │
-                        🔥 Azure Firewall
-                              │
-        ─────────────────────────────────────
-              │              │              │
-           🖥 Frontend     ⚙ Backend       🗄 Data
-              Spoke          Spoke          Spoke
+Built following **Microsoft Cloud Adoption Framework (CAF)** principles for secure and scalable cloud environments.
 
-🔹 Hub → Shared Connectivity & Security
-🔹 Spokes → Application Workloads
-🔹 Secure traffic routing via Firewall + UDR
+✅ Centralized Security  
+✅ Private Workload Connectivity  
+✅ Enterprise Network Segmentation  
+✅ Scalable Platform Foundation  
 
-⚙️ Platform Capabilities
-🌐 Networking
+---
 
-Hub & Spoke Virtual Networks
+## 🏗 Architecture Overview
 
-Subnet Segmentation
+🔹 Hub → Shared Connectivity & Security  
+🔹 Spokes → Application Workloads  
+🔹 Secure traffic routing via Firewall + UDR  
 
-VNet Peering
+---
 
-User Defined Routing
+## ⚙️ Platform Capabilities
 
-🔐 Security
+### 🌐 Networking
+- Hub & Spoke Virtual Networks
+- Subnet Segmentation
+- VNet Peering
+- User Defined Routing
 
-Azure Firewall
+### 🔐 Security
+- Azure Firewall
+- Bastion Secure Access
+- Network Security Groups
+- Azure Key Vault
+- Private Endpoints
 
-Bastion Secure Access
+### 🖥 Compute & Data
+- Azure Virtual Machines
+- SQL Server & Database
+- Load Balancer
+- Application Gateway
 
-Network Security Groups
+### 📊 Monitoring
+- Log Analytics Workspace
+- Centralized Diagnostics
 
-Azure Key Vault
+---
 
-Private Endpoints
-
-🖥 Compute & Data
-
-Azure Virtual Machines
-
-SQL Server & Database
-
-Load Balancer
-
-Application Gateway
-
-📊 Monitoring
-
-Log Analytics Workspace
-Centralized Diagnostics
-
-🚀 Deployment
+## 🚀 Deployment
 
 Run the following Terraform commands to deploy the landing zone:
 
+```bash
 terraform init
 terraform validate
 terraform plan
 terraform apply -auto-approve
+
 📂 Repository Structure
 Azure-Landing-Zone
 │
