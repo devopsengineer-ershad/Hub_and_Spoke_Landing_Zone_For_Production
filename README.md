@@ -18,9 +18,18 @@ Built following **Microsoft Cloud Adoption Framework (CAF)** principles for secu
 
 ## 🏗 Architecture Overview
 
+<p align="center">
+  <img src="docs/architecture.png" alt="Azure Hub Spoke Landing Zone Architecture" width="100%"/>
+</p>
+
+<p align="center">
+<b>Enterprise Hub & Spoke Landing Zone Architecture</b>
+</p>
+
 🔹 Hub → Shared Connectivity & Security  
 🔹 Spokes → Application Workloads  
-🔹 Secure traffic routing via Firewall + UDR  
+🔹 Secure traffic routing via Firewall + UDR 
+
 
 ---
 
