@@ -1,17 +1,6 @@
 🌍 Azure Hub & Spoke Landing Zone
 🚀 Enterprise Azure Infrastructure using Terraform
-<p align="center">
-
-
-
-
-
-
-
-
-
-
-</p>
+<p align="center"> <img src="https://img.shields.io/badge/IaC-Terraform-623CE4?style=for-the-badge&logo=terraform"/> <img src="https://img.shields.io/badge/Cloud-Microsoft%20Azure-0078D4?style=for-the-badge&logo=microsoftazure"/> <img src="https://img.shields.io/badge/Architecture-Hub%20%26%20Spoke-success?style=for-the-badge"/> <img src="https://img.shields.io/badge/Status-Production%20Ready-brightgreen?style=for-the-badge"/> </p>
 ✨ About The Project
 
 An Enterprise-Grade Azure Landing Zone implementing Hub & Spoke Network Architecture using a fully modular Terraform framework.
@@ -37,7 +26,7 @@ Built following Microsoft Cloud Adoption Framework (CAF) principles for secure a
 
 🔹 Hub → Shared Connectivity & Security
 🔹 Spokes → Application Workloads
-🔹 Secure Traffic via Firewall + UDR
+🔹 Secure traffic routing via Firewall + UDR
 
 ⚙️ Platform Capabilities
 🌐 Networking
@@ -87,13 +76,13 @@ terraform apply -auto-approve
 Azure-Landing-Zone
 │
 ├── Modules/
-│   ├── Networking
-│   ├── Security
-│   ├── Compute
-│   └── Monitoring
+│   ├── Networking/
+│   ├── Security/
+│   ├── Compute/
+│   └── Monitoring/
 │
 ├── Environments/
-│   └── Production
+│   └── Production/
 │
 └── main.tf
 🎯 Key Highlights
@@ -115,11 +104,3 @@ Azure-Landing-Zone
 
 Ershad Alam
 💠 Azure DevOps Engineer | Terraform | Kubernetes
-
-⭐ Support
-
-If you like this project:
-
-👉 Star the repository
-👉 Fork for customization
-👉 Use as Enterprise Landing Zone Template
